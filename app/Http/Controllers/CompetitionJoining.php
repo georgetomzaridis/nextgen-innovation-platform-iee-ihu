@@ -40,6 +40,31 @@ class CompetitionJoining extends Controller
 
     function join_person_submit(Request $request){
 
+
+        $request->flash();
+        $fn_form = $request->input('join-person-user-firstname');
+        $ln_form = $request->input('join-person-user-lastname');
+        $kas_form = $request->input('join-person-user-uid');
+        $email_form = $request->input('join-person-user-email');
+        $password_form = Hash::make($request->input('join-person-user-password'));
+        $teamappname_form = $request->input('join-person-teamapp-name');
+        $appname_form = $request->input('join-person-app-name');
+        $apptags_form = json_encode($request->input('join-person-app-tags'));
+        $appdesc_form = $request->input('join-person-app-desc');
+        $submission_hash_id = sha1(md5(($teamappname_form."/".$appname_form."@".$kas_form)));
+
+        if($request->session()->has('join-person-personal-form-FILLDATA')) {
+            $array_session_personal = $request->session()->get('join-person-personal-form-FILLDATA');
+            $newdat_personal = [];
+            $newdat_personal['firstname'] = $fn_form;
+            $newdat_personal['lastname'] = $ln_form;
+            $newdat_personal['email'] = $email_form;
+            $newdat_personal['uid'] = $kas_form;
+            $request->session()->forget('join-person-personal-form-FILLDATA');
+            $request->session()->put('join-person-personal-form-FILLDATA', $newdat_personal);
+        }
+
+
         $customMessages = [
             'required' => 'Το πεδίο αυτό είναι υποχρεωτικό και δεν πρέπει να είναι κενό',
             'join-person-user-uid.starts_with' => 'Ο αριθμός μητρώου θα πρέπει υποχρεωτικά να ξεκινάει με κάποιο απο τα παρακάτω: iee, it, el',
@@ -60,61 +85,66 @@ class CompetitionJoining extends Controller
             'join-person-user-firstname' => ['required', 'alpha', 'bail', 'string', 'max:10', new Uppercase],
             'join-person-user-lastname' => ['required', 'alpha', 'bail', 'string', 'max:22', new Uppercase],
             'join-person-user-uid' => 'required|bail|starts_with:iee,it,el|string|max:10|unique:App\Models\User,kas',
-            'join-person-user-email' => 'required|bail|email:rfc,dns|string|max:30|unique:App\Models\User,email',
+            'join-person-user-email' => ['required','email:rfc,dns','max:30','unique:App\Models\User,email'],
             'join-person-user-password' => 'required|bail|string|max:20',
             'join-person-teamapp-name' => 'required|bail|string|max:60|unique:App\Models\Submission,teamname',
             'join-person-app-name' => 'required|bail|string|max:60|unique:App\Models\Submission,appname',
             'join-person-app-tags' => 'required|array|bail',
             'join-person-app-desc' => 'required|bail|string|max:800'
         ], $customMessages);
-        $fn_form = $request->input('join-person-user-firstname');
-        $ln_form = $request->input('join-person-user-lastname');
-        $kas_form = $request->input('join-person-user-uid');
-        $email_form = $request->input('join-person-user-email');
-        $password_form = Hash::make($request->input('join-person-user-password'));
-        $teamappname_form = $request->input('join-person-teamapp-name');
-        $appname_form = $request->input('join-person-app-name');
-        $apptags_form = json_encode($request->input('join-person-app-tags'));
-        $appdesc_form = $request->input('join-person-app-desc');
-        $unistudent_hash_id = sha1(md5((($kas_form."-".$email_form))));
-        $submission_hash_id = sha1(md5(($teamappname_form."/".$appname_form."@".$kas_form)));
 
-        $newuser_model = User::firstOrNew([
+
+
+
+
+
+
+        $newuser_model = User::firstOrNew(
+            [
+                'email' => $email_form,
+                'kas' => $kas_form
+            ],
+            [
             'firstname' => $fn_form,
             'lastname' => $ln_form,
-            'email' => $email_form,
             'password' => $password_form,
-            'kas' => $kas_form,
-            'uniaccid' => $unistudent_hash_id,
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now()
         ]);
 
-        if($newuser_model->exists()){
+
+
+
+        if($newuser_model->exists){
             throw ValidationException::withMessages([
-                'join-person-user-email' => 'Το συγκεκριμένο email ανήκει ήδη σε κάποιον χρήστη',
-                'join-person-user-uid' => 'Ο συγκεκριμένος Αριθμός Μητρώου ανήκει ήδη σε κάποιον χρήστη'
+                'join-person-user-email' => '2Το συγκεκριμένο email ανήκει ήδη σε κάποιον χρήστη',
+                'join-person-user-uid' => '2Ο συγκεκριμένος Αριθμός Μητρώου ανήκει ήδη σε κάποιον χρήστη'
             ]);
         }else{
             $newuser_model->save();
-            $newsubmission_model = Submission::firstOrNew([
-                'studentacc_id' => $unistudent_hash_id,
+            $newsubmission_model = Submission::firstOrNew(
+                [
+                    'studentacc_id' => $newuser_model->id,
+                    'teamname' => $teamappname_form,
+                    'appname' => $appname_form,
+                ],
+                [
                 'submision_id' => $submission_hash_id,
-                'teamname' => $teamappname_form,
-                'appname' => $appname_form,
                 'apptags' => $apptags_form,
                 'appdesc' => $appdesc_form,
                 'join_type' => 1,
                 'created_at' => Carbon::now(),
                 'updated_at' => Carbon::now()
             ]);
-            if($newsubmission_model->exists()){
+            if($newsubmission_model->exists){
+                dd('hello?');
                 throw ValidationException::withMessages([
                     'join-person-teamapp-name' => 'Το όνομα της ομάδας χρησιμοποιείται ήδη',
                     'join-person-app-name' => 'Το όνομα της εφαρμογής χρησιμοποιείται ήδη'
                 ]);
             }else{
                 $newsubmission_model->save();
+                return redirect(url('/join/status/'.$submission_hash_id));
             }
         }
 

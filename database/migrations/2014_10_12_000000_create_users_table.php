@@ -20,7 +20,6 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->string('password');
             $table->string('kas', 11)->unique()->index();
-            $table->string('uniaccid', 240)->unique()->index();
             $table->rememberToken();
             $table->timestamps();
 

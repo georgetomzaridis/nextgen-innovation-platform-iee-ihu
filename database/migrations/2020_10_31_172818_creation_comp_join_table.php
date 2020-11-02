@@ -15,7 +15,7 @@ class CreationCompJoinTable extends Migration
     {
         Schema::create('comp_join', function (Blueprint $table) {
             $table->id();
-            $table->string('studentacc_id', 240)->index()->nullable(false);
+            $table->unsignedBigInteger('studentacc_id')->index()->nullable(false);
             $table->string('submision_id', 240)->unique()->index()->nullable(false);
             $table->string('teamname', 100)->index()->unique()->nullable(false);
             $table->string('appname', 100)->index()->unique()->nullable(false);

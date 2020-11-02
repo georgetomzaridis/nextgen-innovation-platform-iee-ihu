@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="662e2ab3-4325-4a52-909e-20ce8d0f055b" name="Default Changelist" comment="" />
+    <list default="true" id="662e2ab3-4325-4a52-909e-20ce8d0f055b" name="Default Changelist" comment="First Project Upload">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CompetitionJoining.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CompetitionJoining.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/StatusPage.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/StatusPage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Submission.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Submission.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_31_172818_creation_comp_join_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_31_172818_creation_comp_join_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/join-page-welcome.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/join-page-welcome.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/join-person.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/join-person.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/joinstatus.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/joinstatus.blade.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +23,19 @@
     <execution />
   </component>
   <component name="Git.Settings">
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="main/main" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
@@ -133,7 +157,9 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -165,12 +191,24 @@
       <updated>1604240638685</updated>
       <workItem from="1604240639785" duration="9425000" />
       <workItem from="1604280547776" duration="4097000" />
-      <workItem from="1604308030726" duration="355000" />
+      <workItem from="1604308030726" duration="7873000" />
     </task>
+    <task id="LOCAL-00001" summary="First Project Upload">
+      <created>1604308661785</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1604308661785</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="First Project Upload" />
+    <option name="LAST_COMMIT_MESSAGE" value="First Project Upload" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="183" key="#Deployment" timestamp="1604240968471">
@@ -221,18 +259,26 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="461" y="170" key="SettingsEditor/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1604308181713" />
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1604308289728">
+    <state x="92" y="92" width="1736" height="866" key="ShowDiffWithBranchDialog" timestamp="1604308724119">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1604308289728" />
+    <state x="92" y="92" width="1736" height="866" key="ShowDiffWithBranchDialog/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1604308724119" />
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1604308669419">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1604308669419" />
+    <state x="777" y="435" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604308552478">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="777" y="435" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1604308552478" />
     <state x="725" y="175" key="ftp.server.browser" timestamp="1604240966621">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="725" y="175" key="ftp.server.browser/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1604240966621" />
-    <state x="761" y="426" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1604308358820">
+    <state x="761" y="426" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1604308533244">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="761" y="426" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1604308358820" />
+    <state x="761" y="426" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1604308533244" />
     <state x="616" y="243" key="run.anything.popup" timestamp="1604286336274">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

@@ -34,8 +34,10 @@ class Submission extends Model
         'appdesc',
     ];
 
+
+
     public function user(){
-        return $this->belongsTo(User::class, 'uniaccid', );
+        return $this->belongsTo(User::class, 'studentacc_id', 'id');
     }
 
 }

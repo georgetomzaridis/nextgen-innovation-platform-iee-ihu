@@ -199,7 +199,7 @@
 
                                 <div class="form-group">
                                     <label for="exampleFormControlInput1">Όνομα Ομάδας</label>
-                                    <input type="text" class="form-control @error('join-person-teamapp-name') is-invalid @enderror" id="exampleFormControlInput1" name="join-person-teamapp-name">
+                                    <input type="text" class="form-control @error('join-person-teamapp-name') is-invalid @enderror" id="exampleFormControlInput1" name="join-person-teamapp-name" value="{{ old('join-person-teamapp-name') }}">
                                     @error('join-person-teamapp-name')
                                         <div class="invalid-feedback">
                                             {{ $message }}
@@ -208,7 +208,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="exampleFormControlSelect1">Όνομα Εφαρμογής</label>
-                                    <input type="text" class="form-control @error('join-person-app-name') is-invalid @enderror" id="exampleFormControlInput1" name="join-person-app-name">
+                                    <input type="text" class="form-control @error('join-person-app-name') is-invalid @enderror" id="exampleFormControlInput1" name="join-person-app-name" value="{{ old('join-person-app-name') }}">
                                     @error('join-person-app-name')
                                         <div class="invalid-feedback">
                                             {{ $message }}
@@ -238,7 +238,7 @@
                                 <div class="form-group">
                                     <label for="exampleFormControlSelect1">Περιγραφή Εφαρμογής</label>
                                     <div class="form-group">
-                                        <textarea class="form-control @error('join-person-app-desc') is-invalid @enderror" id="join-person-app-description" maxlength="800" name="join-person-app-desc"></textarea>
+                                        <textarea type="text" class="form-control @error('join-person-app-desc') is-invalid @enderror" id="join-person-app-description" maxlength="800" name="join-person-app-desc">{{ old('join-person-app-desc') }}</textarea>
                                         @error('join-person-app-desc')
                                             <div class="invalid-feedback">
                                                 {{ $message }}
