@@ -1,0 +1,10 @@
+html body{
+    margin: 0;
+    padding: 0;
+
+}
+
+div[class="join-type-cards"] a{
+    text-decoration: none!important;
+    color: black!important;
+}

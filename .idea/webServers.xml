@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="abf36d07-73e9-4094-ad56-846fe6b32b8d" name="IHUNEXTGENPLATFORM" url="https://app.competition.iee.ihu.gr">
+        <fileTransfer rootFolder="/srv/app.competition.iee.ihu.gr/htdocs" accessType="SFTP" host="competition.iee.ihu.gr" port="22" sshConfigId="1204b7e7-8ae7-45d1-86b6-06cb132bd406" sshConfig="comp3@competition.iee.ihu.gr:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,32 @@
+html body{
+    margin: 0;
+    padding: 0;
+
+}
+
+.join-type-cards{
+    margin-bottom: 10px;
+
+}
+.join-type-cards a{
+    text-decoration: none!important;
+    color: black!important;
+}
+
+.join-type-cards a:hover{
+    background: black!important;
+    color: white!important;
+}
+
+#join-person-app-description{
+    resize: none;
+    height: 196px;
+}
+
+.change-red-help-test{
+    color: red!important;
+}
+
+
+
+
