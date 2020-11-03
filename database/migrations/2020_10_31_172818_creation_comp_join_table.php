@@ -17,6 +17,8 @@ class CreationCompJoinTable extends Migration
             $table->id();
             $table->unsignedBigInteger('studentacc_id')->index()->nullable(false);
             $table->string('submision_id', 240)->unique()->index()->nullable(false);
+            $table->string('invite_code', 240)->unique()->index()->nullable(true);
+            $table->integer('invite_active')->nullable(false)->default(1);
             $table->string('teamname', 100)->index()->unique()->nullable(false);
             $table->string('appname', 100)->index()->unique()->nullable(false);
             $table->string('apptags', 200)->index()->nullable(false);

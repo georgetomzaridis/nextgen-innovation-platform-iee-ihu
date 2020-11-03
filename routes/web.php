@@ -22,6 +22,9 @@ Route::get('/join', function () {
 Route::get('/join/person', [\App\Http\Controllers\CompetitionJoining::class, 'join_person']);
 Route::post('/join/person', [\App\Http\Controllers\CompetitionJoining::class, 'join_person_submit']);
 
+Route::get('/join/team', [\App\Http\Controllers\CompetitionJoining::class, 'join_team']);
+Route::post('/join/team', [\App\Http\Controllers\CompetitionJoining::class, 'join_team_submit']);
+
 Route::get('/join/person/api_filler_data', [\App\Http\Controllers\IEEAppsAPIConnector::class, 'join_personal_info_filler_iee_apps']);
 
 Route::get('/api/callback', [\App\Http\Controllers\IEEAppsAPIConnector::class, 'callback_join_personal_info_filler_iee_apps']);

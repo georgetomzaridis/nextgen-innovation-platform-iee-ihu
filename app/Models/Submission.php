@@ -32,6 +32,9 @@ class Submission extends Model
         'apptags',
         'appdesc',
         'appdesc',
+        'invite_code',
+        'invite_active',
+        'join_type'
     ];
 
 
