@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="662e2ab3-4325-4a52-909e-20ce8d0f055b" name="Default Changelist" comment="One-Person Join System Complete">
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_11_02_211117_creation_comp_team_members.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/join-team.blade.php" afterDir="false" />
+    <list default="true" id="662e2ab3-4325-4a52-909e-20ce8d0f055b" name="Default Changelist" comment="Team Join System Complete [No Members Invite Join Function]">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CompetitionJoining.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CompetitionJoining.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Submission.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Submission.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_31_172818_creation_comp_join_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_31_172818_creation_comp_join_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/joinstatus.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/joinstatus.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_02_211117_creation_comp_team_members.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_02_211117_creation_comp_team_members.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +188,9 @@
       <updated>1604240638685</updated>
       <workItem from="1604240639785" duration="9425000" />
       <workItem from="1604280547776" duration="4097000" />
-      <workItem from="1604308030726" duration="12866000" />
+      <workItem from="1604308030726" duration="21238000" />
+      <workItem from="1604499727883" duration="20000" />
+      <workItem from="1604499764651" duration="2248000" />
     </task>
     <task id="LOCAL-00001" summary="First Project Upload">
       <created>1604308661785</created>
@@ -208,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604316199175</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Team Join System Complete [No Members Invite Join Function]">
+      <created>1604371432128</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1604371432128</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,7 +223,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="First Project Upload" />
     <MESSAGE value="One-Person Join System Complete" />
-    <option name="LAST_COMMIT_MESSAGE" value="One-Person Join System Complete" />
+    <MESSAGE value="Team Join System Complete [No Members Invite Join Function]" />
+    <option name="LAST_COMMIT_MESSAGE" value="Team Join System Complete [No Members Invite Join Function]" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="183" key="#Deployment" timestamp="1604240968471">
@@ -273,10 +279,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="92" y="92" width="1736" height="866" key="ShowDiffWithBranchDialog/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1604308724119" />
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1604316202649">
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1604371435003">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1604316202649" />
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1604371435003" />
     <state x="777" y="435" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604308552478">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -293,6 +299,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" key="run.anything.popup/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1604286336274" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1604506938867">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1604506938867" />
     <state x="790" y="316" key="svn.repositoryBrowser" timestamp="1604308071528">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

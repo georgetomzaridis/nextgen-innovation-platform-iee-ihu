@@ -13,17 +13,19 @@ class CreateUsersTable extends Migration
      */
     public function up()
     {
+        Schema::enableForeignKeyConstraints();
         Schema::create('users', function (Blueprint $table) {
             $table->id();
-            $table->string('firstname', 100)->index()->nullable(false);
-            $table->string('lastname', 100)->index()->nullable(false);
+            $table->string('firstname', 100)->nullable(false);
+            $table->string('lastname', 100)->nullable(false);
             $table->string('email')->unique();
             $table->string('password');
-            $table->string('kas', 11)->unique()->index();
+            $table->string('kas', 11)->unique();
             $table->rememberToken();
             $table->timestamps();
 
         });
+
     }
 
     /**
