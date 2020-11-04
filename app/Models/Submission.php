@@ -45,6 +45,10 @@ class Submission extends Model
         return $this->belongsTo(User::class, 'studentacc_id', 'id');
     }
 
+    public function user(){
+        return $this->belongsTo(User::class, 'studentacc_id', 'id');
+    }
+
     public function team(){
         return $this->hasMany(SubmissionTeams::class, 'team_id', 'id');
     }
