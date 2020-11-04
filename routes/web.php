@@ -31,4 +31,7 @@ Route::get('/api/callback', [\App\Http\Controllers\IEEAppsAPIConnector::class, '
 
 Route::get('/join/status/{submisionid}', [\App\Http\Controllers\StatusPage::class, 'show_submision_status']);
 
+Route::get('/team/invite/{invitecode}', [\App\Http\Controllers\CompetitionJoining::class, 'join_memeber_to_team']);
+Route::post('/join/team/{invitecode}', [\App\Http\Controllers\CompetitionJoining::class, 'join_memeber_to_team_submit']);
+
 

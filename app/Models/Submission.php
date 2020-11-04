@@ -34,13 +34,20 @@ class Submission extends Model
         'appdesc',
         'invite_code',
         'invite_active',
-        'join_type'
+        'join_type',
+        'created_at',
+        'updated_at'
     ];
 
 
 
-    public function user(){
+    public function admin(){
         return $this->belongsTo(User::class, 'studentacc_id', 'id');
     }
+
+    public function team(){
+        return $this->hasMany(SubmissionTeams::class, 'team_id', 'id');
+    }
+
 
 }

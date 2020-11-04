@@ -32,6 +32,8 @@ class User extends Authenticatable
         'email',
         'kas',
         'password',
+        'created_at',
+        'updated_at'
     ];
 
     /**
@@ -56,5 +58,6 @@ class User extends Authenticatable
     public function submision(){
         return $this->hasOne(Submission::class, 'studentacc_id', 'id');
     }
+
 
 }

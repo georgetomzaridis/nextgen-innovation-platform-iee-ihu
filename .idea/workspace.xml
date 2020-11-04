@@ -1,11 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:main" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="662e2ab3-4325-4a52-909e-20ce8d0f055b" name="Default Changelist" comment="Team Join System Complete [No Members Invite Join Function]">
+    <list default="true" id="662e2ab3-4325-4a52-909e-20ce8d0f055b" name="Default Changelist" comment="Adding Foreign keys to Users/Comp_Join/Comp_Join_Members + Delete Cascade">
+      <change afterPath="$PROJECT_DIR$/app/Models/SubmissionTeams.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/team-invite-link.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_31_172818_creation_comp_join_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_31_172818_creation_comp_join_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_02_211117_creation_comp_team_members.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_02_211117_creation_comp_team_members.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CompetitionJoining.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CompetitionJoining.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Submission.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Submission.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,7 +211,8 @@
       <workItem from="1604280547776" duration="4097000" />
       <workItem from="1604308030726" duration="21238000" />
       <workItem from="1604499727883" duration="20000" />
-      <workItem from="1604499764651" duration="2248000" />
+      <workItem from="1604499764651" duration="2340000" />
+      <workItem from="1604517254642" duration="5283000" />
     </task>
     <task id="LOCAL-00001" summary="First Project Upload">
       <created>1604308661785</created>
@@ -213,18 +235,38 @@
       <option name="project" value="LOCAL" />
       <updated>1604371432128</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Adding Foreign keys to Users/Comp_Join/Comp_Join_Members + Delete Cascade">
+      <created>1604507887492</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1604507887492</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="First Project Upload" />
     <MESSAGE value="One-Person Join System Complete" />
     <MESSAGE value="Team Join System Complete [No Members Invite Join Function]" />
-    <option name="LAST_COMMIT_MESSAGE" value="Team Join System Complete [No Members Invite Join Function]" />
+    <MESSAGE value="Adding Foreign keys to Users/Comp_Join/Comp_Join_Members + Delete Cascade" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding Foreign keys to Users/Comp_Join/Comp_Join_Members + Delete Cascade" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="183" key="#Deployment" timestamp="1604240968471">
@@ -243,10 +285,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="732" y="43" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1604276307894" />
-    <state x="690" y="280" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1604275803498">
+    <state x="690" y="280" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1604517853697">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="690" y="280" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1604275803498" />
+    <state x="690" y="280" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1604517853697" />
     <state x="775" y="427" key="Github.ShareDialog" timestamp="1604308088015">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -267,10 +309,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1877" height="278" key="GridCell.Tab.0.right/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1604280522641" />
-    <state x="794" y="444" key="NewPhpFileDialog" timestamp="1604349251432">
+    <state x="794" y="444" key="NewPhpFileDialog" timestamp="1604517426342">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="794" y="444" key="NewPhpFileDialog/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1604349251432" />
+    <state x="794" y="444" key="NewPhpFileDialog/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1604517426342" />
     <state x="461" y="170" key="SettingsEditor" timestamp="1604308181713">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -279,10 +321,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="92" y="92" width="1736" height="866" key="ShowDiffWithBranchDialog/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1604308724119" />
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1604371435003">
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1604507889240">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1604371435003" />
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1604507889240" />
     <state x="777" y="435" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604308552478">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
