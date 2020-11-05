@@ -19,10 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="662e2ab3-4325-4a52-909e-20ce8d0f055b" name="Default Changelist" comment="Members can join now teams via invite code/links[Ready Full v0.0.1]">
+    <list default="true" id="662e2ab3-4325-4a52-909e-20ce8d0f055b" name="Default Changelist" comment="Members can join now teams via invite code/links[Ready Full v0.0.1] [Fix Bug Join Personal Status Model Error]">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/StatusPage.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/StatusPage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Submission.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Submission.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -208,7 +206,7 @@
       <workItem from="1604308030726" duration="21238000" />
       <workItem from="1604499727883" duration="20000" />
       <workItem from="1604499764651" duration="2340000" />
-      <workItem from="1604517254642" duration="5580000" />
+      <workItem from="1604517254642" duration="5860000" />
     </task>
     <task id="LOCAL-00001" summary="First Project Upload">
       <created>1604308661785</created>
@@ -245,7 +243,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604522690066</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Members can join now teams via invite code/links[Ready Full v0.0.1] [Fix Bug Join Personal Status Model Error]">
+      <created>1604522945937</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1604522945937</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,7 +275,8 @@
     <MESSAGE value="Team Join System Complete [No Members Invite Join Function]" />
     <MESSAGE value="Adding Foreign keys to Users/Comp_Join/Comp_Join_Members + Delete Cascade" />
     <MESSAGE value="Members can join now teams via invite code/links[Ready Full v0.0.1]" />
-    <option name="LAST_COMMIT_MESSAGE" value="Members can join now teams via invite code/links[Ready Full v0.0.1]" />
+    <MESSAGE value="Members can join now teams via invite code/links[Ready Full v0.0.1] [Fix Bug Join Personal Status Model Error]" />
+    <option name="LAST_COMMIT_MESSAGE" value="Members can join now teams via invite code/links[Ready Full v0.0.1] [Fix Bug Join Personal Status Model Error]" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="183" key="#Deployment" timestamp="1604240968471">
@@ -325,10 +331,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="92" y="92" width="1736" height="866" key="ShowDiffWithBranchDialog/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1604308724119" />
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1604522691975">
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1604522949871">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1604522691975" />
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1604522949871" />
     <state x="777" y="435" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604308552478">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
