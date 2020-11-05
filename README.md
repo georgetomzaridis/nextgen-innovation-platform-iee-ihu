@@ -43,6 +43,7 @@ Laravel is a web application framework (PHP MVC) with expressive, elegant syntax
 
 - If you have any questions dont hesitate to contact me: georgetomzaridis@gmail.com.
 - Issues? Dont worry you can use the issue tracker and open a new case or email me.
+- You got an idea? I am happy to hear it! Submit it freely!
 
 ## License
 
