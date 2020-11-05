@@ -12,8 +12,7 @@ NextGen Innovation 2020 is a computer science competition organized and created 
 - Team Admins can invite others to be members
 - Data Exchange / Cross-Check (Student Information) by communicate with the apps.iee.ihu.gr API
 
-More Features coming soon!
-* Current Version: v0.0.1-prebuild
+More Features coming soon / Current Version: v0.0.1-prebuild
 
 ## Project Images
 
