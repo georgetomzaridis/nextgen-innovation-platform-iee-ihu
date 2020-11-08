@@ -31,6 +31,7 @@
                             </ul>
                             </p>
                             <p>Έχεις λογαριασμό στο apps.iee.ihu.gr; Κάνε κλίκ <a href="/join/person/api_filler_data">εδώ</a> για να συμπληρωθούν τα προσωπικά σου στοιχεία αυτόματα</p>
+                            <p style="color: #f05454!important; font-size: 14px!important;">[Ενημέρωση 08/11/2020] Η υπηρεσία ταυτοποίησης IEE@IHU Apps αντιμετωπίζει αυτήν την στιγμή κάποια τεχνικά θέματα λόγω αυξημένου φόρτου, παρακαλώ συμπληρώστε την φόρμα χειροκίνητα.</p>
                             @if ($csapi === "success")
                                 <div class="alert alert-success alert-dismissible fade show" role="alert">
                                     <strong><i class="fas fa-check-double"></i> Επιτυχία</strong> Η επικοινωνία ήταν επιτυχής και τα απαιτούμενα δεδομένα φορτώθηκαν. Παρακαλώ ελέγξτε για τυχόν λάθη η πιθανές διορθώσεις.

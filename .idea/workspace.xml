@@ -19,8 +19,17 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="662e2ab3-4325-4a52-909e-20ce8d0f055b" name="Default Changelist" comment="Members can join now teams via invite code/links[Ready Full v0.0.1] [Fix Bug Join Personal Status Model Error]">
+    <list default="true" id="662e2ab3-4325-4a52-909e-20ce8d0f055b" name="Default Changelist" comment="Adding Pre-Release Project Images v0.0.1">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Accounts.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/dashboard.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/navbar-auth.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/login.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CompetitionJoining.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CompetitionJoining.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/IEEAppsAPIConnector.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/IEEAppsAPIConnector.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/join-person.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/join-person.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/team-invite-link.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/team-invite-link.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -207,6 +216,10 @@
       <workItem from="1604499727883" duration="20000" />
       <workItem from="1604499764651" duration="2340000" />
       <workItem from="1604517254642" duration="5860000" />
+      <workItem from="1604598700845" duration="1142000" />
+      <workItem from="1604701735242" duration="635000" />
+      <workItem from="1604775253275" duration="33000" />
+      <workItem from="1604836904077" duration="4346000" />
     </task>
     <task id="LOCAL-00001" summary="First Project Upload">
       <created>1604308661785</created>
@@ -250,7 +263,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604522945937</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Adding Pre-Release Project Images v0.0.1">
+      <created>1604598882719</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1604598882719</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -276,7 +296,8 @@
     <MESSAGE value="Adding Foreign keys to Users/Comp_Join/Comp_Join_Members + Delete Cascade" />
     <MESSAGE value="Members can join now teams via invite code/links[Ready Full v0.0.1]" />
     <MESSAGE value="Members can join now teams via invite code/links[Ready Full v0.0.1] [Fix Bug Join Personal Status Model Error]" />
-    <option name="LAST_COMMIT_MESSAGE" value="Members can join now teams via invite code/links[Ready Full v0.0.1] [Fix Bug Join Personal Status Model Error]" />
+    <MESSAGE value="Adding Pre-Release Project Images v0.0.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding Pre-Release Project Images v0.0.1" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="183" key="#Deployment" timestamp="1604240968471">
@@ -295,10 +316,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="732" y="43" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1604276307894" />
-    <state x="690" y="280" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1604517853697">
+    <state x="690" y="280" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1604840557223">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="690" y="280" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1604517853697" />
+    <state x="690" y="280" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1604840557223" />
     <state x="775" y="427" key="Github.ShareDialog" timestamp="1604308088015">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -319,10 +340,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1877" height="278" key="GridCell.Tab.0.right/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1604280522641" />
-    <state x="794" y="444" key="NewPhpFileDialog" timestamp="1604517426342">
+    <state x="794" y="444" key="NewPhpFileDialog" timestamp="1604840715196">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="794" y="444" key="NewPhpFileDialog/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1604517426342" />
+    <state x="794" y="444" key="NewPhpFileDialog/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1604840715196" />
     <state x="461" y="170" key="SettingsEditor" timestamp="1604308181713">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -331,10 +352,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="92" y="92" width="1736" height="866" key="ShowDiffWithBranchDialog/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1604308724119" />
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1604522949871">
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1604600335693">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1604522949871" />
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1604600335693" />
     <state x="777" y="435" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604308552478">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

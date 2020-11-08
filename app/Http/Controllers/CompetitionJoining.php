@@ -138,7 +138,7 @@ class CompetitionJoining extends Controller
                 'updated_at' => Carbon::now()
             ]);
             if($newsubmission_model->exists){
-                dd('hello?');
+
                 throw ValidationException::withMessages([
                     'join-person-teamapp-name' => 'Το όνομα της ομάδας χρησιμοποιείται ήδη',
                     'join-person-app-name' => 'Το όνομα της εφαρμογής χρησιμοποιείται ήδη'
@@ -281,7 +281,6 @@ class CompetitionJoining extends Controller
                     'updated_at' => Carbon::now()
                 ]);
             if($newsubmission_model_team->exists){
-                dd('hello?');
                 throw ValidationException::withMessages([
                     'join-person-teamapp-name' => 'Το όνομα της ομάδας χρησιμοποιείται ήδη',
                     'join-person-app-name' => 'Το όνομα της εφαρμογής χρησιμοποιείται ήδη'

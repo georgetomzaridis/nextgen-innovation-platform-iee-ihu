@@ -34,4 +34,9 @@ Route::get('/join/status/{submisionid}', [\App\Http\Controllers\StatusPage::clas
 Route::get('/team/invite/{invitecode}', [\App\Http\Controllers\CompetitionJoining::class, 'join_memeber_to_team']);
 Route::post('/join/team/{invitecode}', [\App\Http\Controllers\CompetitionJoining::class, 'join_memeber_to_team_submit']);
 
+Route::get('/login', [\App\Http\Controllers\Accounts::class, 'index']);
+Route::get('/join/person/api_login', [\App\Http\Controllers\IEEAppsAPIConnector::class, 'login_filler_iee_apps']);
+Route::post('/login', [\App\Http\Controllers\Accounts::class, 'login']);
+Route::get('/user/dashboard', [\App\Http\Controllers\Accounts::class, 'dashboard_home']);
+
 
