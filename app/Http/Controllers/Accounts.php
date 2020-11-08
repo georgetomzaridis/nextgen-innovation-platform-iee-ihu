@@ -15,7 +15,7 @@ use App\Models\Submission;
 class Accounts extends Controller
 {
     function index(){
-        return view('auth.login');
+        return view('login');
     }
 
     function login(Request $request){
@@ -71,14 +71,14 @@ class Accounts extends Controller
                      }
                  }
 
-                return view('auth.dashboard', ['submisions_table' => $submissions_table, 'teammembers_table' => $submissions_team_table, 'haveteamgroups' => $have_team_groups]);
+                return view('dashboard', ['submisions_table' => $submissions_table, 'teammembers_table' => $submissions_team_table, 'haveteamgroups' => $have_team_groups]);
             }else{
                 $find_join_teams =SubmissionTeams::query()->where(['member_id' => Auth::id()])->get()->toArray();
                 foreach ($find_join_teams as $fjt1){
                     $submissions_table_arr3 = Submission::find($fjt1['team_id'])->toArray();
                     array_push($submissions_table, $submissions_table_arr3);
                 }
-                return view('auth.dashboard', ['submisions_table' => $submissions_table, 'teammembers_table' => '', 'haveteamgroups' => 0]);
+                return view('dashboard', ['submisions_table' => $submissions_table, 'teammembers_table' => '', 'haveteamgroups' => 0]);
             }
 
 

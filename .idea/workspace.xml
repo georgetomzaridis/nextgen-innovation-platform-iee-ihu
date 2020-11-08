@@ -19,32 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="662e2ab3-4325-4a52-909e-20ce8d0f055b" name="Default Changelist" comment="Pre-Login Feature Dashboard Users">
-      <change afterPath="$PROJECT_DIR$/app/Actions/Fortify/CreateNewUser.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Actions/Fortify/PasswordValidationRules.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Actions/Fortify/ResetUserPassword.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Actions/Fortify/UpdateUserPassword.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Actions/Fortify/UpdateUserProfileInformation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Providers/FortifyServiceProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth($options)" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/fortify.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/dashboard.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/passwords/confirm.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/verify.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/NextGen-Innovation-IHU-Platform.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/NextGen-Innovation-IHU-Platform.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+    <list default="true" id="662e2ab3-4325-4a52-909e-20ce8d0f055b" name="Default Changelist" comment="Login Feature Dashboard Users Addded v0.0.1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Accounts.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Accounts.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/navbar-auth.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/navbar-auth.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/dashboard.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -216,8 +195,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Work\Others\NextGen-Innovation-IHU-Platform\resources\views\auth" />
       <recent name="D:\Work\Others\NextGen-Innovation-IHU-Platform\resources\views" />
+      <recent name="D:\Work\Others\NextGen-Innovation-IHU-Platform\resources\views\auth" />
     </key>
   </component>
   <component name="RunManager">
@@ -246,7 +225,7 @@
       <workItem from="1604598700845" duration="1142000" />
       <workItem from="1604701735242" duration="635000" />
       <workItem from="1604775253275" duration="33000" />
-      <workItem from="1604836904077" duration="15611000" />
+      <workItem from="1604836904077" duration="15851000" />
     </task>
     <task id="LOCAL-00001" summary="First Project Upload">
       <created>1604308661785</created>
@@ -304,7 +283,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604841557454</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Login Feature Dashboard Users Addded v0.0.1">
+      <created>1604852695535</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1604852695535</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -332,7 +318,8 @@
     <MESSAGE value="Members can join now teams via invite code/links[Ready Full v0.0.1] [Fix Bug Join Personal Status Model Error]" />
     <MESSAGE value="Adding Pre-Release Project Images v0.0.1" />
     <MESSAGE value="Pre-Login Feature Dashboard Users" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pre-Login Feature Dashboard Users" />
+    <MESSAGE value="Login Feature Dashboard Users Addded v0.0.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Login Feature Dashboard Users Addded v0.0.1" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="183" key="#Deployment" timestamp="1604240968471">
@@ -395,10 +382,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="92" y="92" width="1736" height="866" key="ShowDiffWithBranchDialog/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1604308724119" />
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1604841561258">
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1604852698575">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1604841561258" />
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1604852698575" />
     <state x="777" y="435" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604308552478">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
