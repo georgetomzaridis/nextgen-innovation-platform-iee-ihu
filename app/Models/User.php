@@ -56,8 +56,10 @@ class User extends Authenticatable
     ];
 
     public function submision(){
-        return $this->hasOne(Submission::class, 'studentacc_id', 'id');
+        return $this->hasMany(Submission::class, 'studentacc_id', 'id');
     }
+
+
 
 
 }

@@ -33,6 +33,18 @@
     <a class="navbar-brand" href="{{ url('/') }}">
         {{ config('app.name', 'Next-Gen Innovation Platform') }} | IEE@IHU
     </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"></li>
+        </ul>
+        <span class="navbar-text">
+            <i class="fas fa-user-circle"></i> {{ \Illuminate\Support\Facades\Auth::user()->firstname }} {{ \Illuminate\Support\Facades\Auth::user()->lastname }} [ {{ \Illuminate\Support\Facades\Auth::user()->kas }} ]
+        </span>
+    </div>
 </nav>
 <main class="py-4">
     @yield('public-content')

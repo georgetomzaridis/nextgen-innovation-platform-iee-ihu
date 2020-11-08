@@ -2,17 +2,20 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\SubmissionTeams;
 use App\Rules\Uppercase;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\ValidationException;
+use App\Models\User;
+use App\Models\Submission;
 
 class Accounts extends Controller
 {
     function index(){
-        return view('login');
+        return view('auth.login');
     }
 
     function login(Request $request){
@@ -46,6 +49,48 @@ class Accounts extends Controller
     }
 
     function dashboard_home(){
-        return view('dashboard');
+        $submissions_table = [];
+        $submissions_team_table = [];
+        $have_team_groups = 0;
+
+        if(Auth::check()){
+            //Auth::loginUsingId(26); //18 25
+
+            if(User::find(Auth::id())->submision->toArray() !== []){
+                 $submissions_table_arr = User::find(Auth::id())->submision->toArray();
+                 foreach ($submissions_table_arr as $sta1){
+                     array_push($submissions_table, $sta1);
+                     if($sta1['join_type'] === 2){
+                        if(Submission::find($sta1['id'])->team->toArray() !== null){
+                            $submissions_team_table_arr = Submission::find($sta1['id'])->team->toArray();
+                            foreach ($submissions_team_table_arr as $stta2){
+                                $have_team_groups = 1;
+                                array_push($submissions_team_table, $stta2);
+                            }
+                        }
+                     }
+                 }
+
+                return view('auth.dashboard', ['submisions_table' => $submissions_table, 'teammembers_table' => $submissions_team_table, 'haveteamgroups' => $have_team_groups]);
+            }else{
+                $find_join_teams =SubmissionTeams::query()->where(['member_id' => Auth::id()])->get()->toArray();
+                foreach ($find_join_teams as $fjt1){
+                    $submissions_table_arr3 = Submission::find($fjt1['team_id'])->toArray();
+                    array_push($submissions_table, $submissions_table_arr3);
+                }
+                return view('auth.dashboard', ['submisions_table' => $submissions_table, 'teammembers_table' => '', 'haveteamgroups' => 0]);
+            }
+
+
+
+        }else{
+            return redirect('/login');
+        }
+
+    }
+
+    function user_logout(){
+        Auth::logout();
+        return redirect('/login');
     }
 }
