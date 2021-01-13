@@ -20,10 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="662e2ab3-4325-4a52-909e-20ce8d0f055b" name="Default Changelist" comment="Login Feature Dashboard Users Addded v0.0.1">
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/dashboard.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Accounts.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Accounts.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/dashboard.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Submission.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Submission.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_31_172818_creation_comp_join_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_31_172818_creation_comp_join_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -225,7 +229,18 @@
       <workItem from="1604598700845" duration="1142000" />
       <workItem from="1604701735242" duration="635000" />
       <workItem from="1604775253275" duration="33000" />
-      <workItem from="1604836904077" duration="15851000" />
+      <workItem from="1604836904077" duration="18447000" />
+      <workItem from="1604924511517" duration="1205000" />
+      <workItem from="1604958390044" duration="634000" />
+      <workItem from="1605185003074" duration="3000" />
+      <workItem from="1605191940092" duration="7000" />
+      <workItem from="1605622199708" duration="8000" />
+      <workItem from="1606509993289" duration="602000" />
+      <workItem from="1606588344731" duration="11000" />
+      <workItem from="1606673674157" duration="12000" />
+      <workItem from="1607036014039" duration="24000" />
+      <workItem from="1607853120073" duration="233000" />
+      <workItem from="1610545082475" duration="6366000" />
     </task>
     <task id="LOCAL-00001" summary="First Project Upload">
       <created>1604308661785</created>
@@ -290,7 +305,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604852695535</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Login Feature Dashboard Users Addded v0.0.1">
+      <created>1604852930990</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1604852930990</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -322,14 +344,14 @@
     <option name="LAST_COMMIT_MESSAGE" value="Login Feature Dashboard Users Addded v0.0.1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="183" key="#Deployment" timestamp="1604240968471">
+    <state x="552" y="183" key="#Deployment" timestamp="1610545125038">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="183" key="#Deployment/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1604240968471" />
-    <state x="634" y="185" key="#Options" timestamp="1604240900965">
+    <state x="552" y="183" key="#Deployment/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1610545125038" />
+    <state x="634" y="185" key="#Options" timestamp="1610545131757">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="634" y="185" key="#Options/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1604240900965" />
+    <state x="634" y="185" key="#Options/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1610545131757" />
     <state x="536" y="170" key="#SSH_Configurations" timestamp="1604240937542">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -350,6 +372,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="690" y="280" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1604840557223" />
+    <state x="740" y="280" key="FileChooserDialogImpl" timestamp="1607853352873">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="740" y="280" key="FileChooserDialogImpl/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1607853352873" />
     <state x="775" y="427" key="Github.ShareDialog" timestamp="1604308088015">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

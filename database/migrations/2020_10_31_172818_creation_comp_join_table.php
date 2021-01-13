@@ -23,6 +23,7 @@ class CreationCompJoinTable extends Migration
             $table->string('teamname', 100)->unique()->nullable(false);
             $table->string('appname', 100)->unique()->nullable(false);
             $table->string('apptags', 200)->nullable(false);
+            $table->text('projectspace')->nullable(true);
             $table->Text('appdesc')->nullable(false);
             $table->integer('join_type')->nullable(false)->default(1);
             $table->timestamps();

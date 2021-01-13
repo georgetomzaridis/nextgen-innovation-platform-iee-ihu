@@ -1,6 +1,6 @@
 @extends('layouts.navbar-public')
 
-
+<!-- /join/person/api_login -->
 @section('public-content')
 
     <div class="container">
@@ -11,7 +11,7 @@
                         <div style="text-align: center;">
                             <h1 class="icon-status-join"><i class="fas fa-cloud" style="color: black!important;"></i></h1>
                             <h3>Σύνδεση</h3>
-                            <p>Έχεις λογαριασμό στο apps.iee.ihu.gr; Κάνε κλίκ <a href="/join/person/api_login">εδώ</a> για να κάνεις σύνδεση μέσω της υπηρεσίας.</p>
+                            <p>Έχεις λογαριασμό στο apps.iee.ihu.gr; Κάνε κλίκ <a href="">εδώ</a> για να κάνεις σύνδεση μέσω της υπηρεσίας.</p>
                             <p style="color: #f05454!important; font-size: 14px!important;">[Ενημέρωση 08/11/2020] Η υπηρεσία ταυτοποίησης IEE@IHU Apps αντιμετωπίζει αυτήν την στιγμή κάποια τεχνικά θέματα λόγω αυξημένου φόρτου, παρακαλώ συμπληρώστε την φόρμα χειροκίνητα.</p>
                         </div>
                     </div>

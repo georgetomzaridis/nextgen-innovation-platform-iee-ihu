@@ -39,5 +39,10 @@ Route::get('/join/person/api_login', [\App\Http\Controllers\IEEAppsAPIConnector:
 Route::post('/login', [\App\Http\Controllers\Accounts::class, 'login']);
 Route::get('/user/dashboard', [\App\Http\Controllers\Accounts::class, 'dashboard_home']);
 
+//Route::get('/user/dashboard/projectspace', [\App\Http\Controllers\Accounts::class, 'dashboard_home']);
+//Route::get('/user/dashboard/projectspace/{pjstatus}', [\App\Http\Controllers\Accounts::class, 'dashboard_home']);
+
 Route::get('/logout', [\App\Http\Controllers\Accounts::class, 'user_logout']);
+
+Route::post('/user/dashboard/projectspace', [\App\Http\Controllers\Accounts::class, 'project_space_form_submit']);
 
